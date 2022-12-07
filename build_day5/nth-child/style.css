@@ -1,0 +1,56 @@
+.container div{
+    display: inline-block;
+}
+
+div:nth-child(2n) {
+    border: 1px solid crimson;
+}
+
+.container div:nth-child(odd) span:nth-child(2n){
+    color: #07ff07;
+}
+
+div:nth-child(2) span:last-of-type {
+    color: blue;
+}
+
+div:nth-child(6) span:not(:last-of-type){
+    color: yellow;
+}
+
+div {
+    position: relative;
+}
+
+div span:nth-child(1) {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    translate: -50%;
+    padding: .3em;
+}
+
+div span:nth-child(2) {
+    position: absolute;
+    text-align: center;
+    bottom: 100%;
+    left: 50%;
+    translate: -50%;
+    padding: .3em;
+}
+
+div:nth-child(10) span:last-of-type{
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    translate: 0 -50%;
+    padding: .5em;    
+}
+.container div:nth-child(1) span:last-of-type{
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    translate: 0 -50%;
+    padding: .5em;
+}
