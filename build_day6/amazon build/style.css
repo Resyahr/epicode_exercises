@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --title_color: #EAEDED;
+}
+
+body {
+    background-color: #EAEDED;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global */
+
+.link {
+    text-decoration: none;
+    color: #017185;
+}
+.pa {
+    color: #080808;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1em;
+}
+
+.logo {
+    background-color: #222F3E;
+    padding: 1.5em;
+}
+.logo img {
+    width: 200px;
+}
+
+.nav_links {
+    background-color: #354758;
+    padding: 1.2em;
+}
+.nav_link {
+    color: var(--title_color);
+    font-weight: 700;
+    padding: .2em .5em;
+    font-size: 1.7em;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Site */
+
+.container {
+    margin: 0 2em;
+}
+
+.gift_cards {
+    background-color: #F56600;
+    margin: 2em 0;
+    padding: .7em;
+    text-align: center;
+    font-weight: 300;
+    color: var(--title_color);
+}
+
+.background_holidays_gift {
+    background: url(./assets-1/assets/bg-image.png);
+    height: 12.2em;
+    color: var(--title_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background_holidays_gift h1 {
+    padding: 1em;
+}
+.background_holidays_gift p {
+    font-weight: 600;
+}
+
+.recommended {
+    background-color: #FFFFFF;
+    margin: 2em 0;
+}
+.subtitle {
+    text-align: left;
+    margin: .5em 0;
+}
+
+.cards_container {
+    text-align: center;
+}
+
+.card_container {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    max-width: 200px;
+    min-width: 80px;
+    height: 300px;
+    padding: 1em;
+}
+
+.card__transition_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: all .5s ease;
+}
+.card_container:hover .card__transition_overlay {
+    transform: translateY(0);
+}
+
+.card__filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    opacity: .3;
+    top: 0;
+    left: 0;
+}
+
+.card_img img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card__favorite {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    z-index: 3;
+    user-select: none;
+    cursor: pointer;
+}
+.card__favorite img{
+    width: 20px;
+}
+
+.card__add_to_cart {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    user-select: none;
+    color: white;
+    background-color: #5555f1;
+    padding: .5em;
+    width: 80%;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.card__add_to_cart p {
+    display: inline-block;
+}
+
+
+.gift_img {
+    width: 100%;
+}
+
+.sound_of_sheer_img {
+    width: 100%;
+}

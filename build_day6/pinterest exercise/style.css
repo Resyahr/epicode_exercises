@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #161616;
+}
+
 .card {
-    width: 200px;
-    height: 300px;
+    width: 400px;
+    height: 500px;
     position: relative;
     overflow: hidden;
     margin: 16em auto;
@@ -27,8 +31,8 @@
 }
 
 .card__image{
-    width: 200px;
-    height: 300px;
+    width: 400px;
+    height: 500px;
     position: relative;
 }
 .card__image img {
@@ -52,13 +56,15 @@
     z-index: 3;
     user-select: none;
     cursor: pointer;
-    transform: translateY(-150%);
+    transform: translateY(-400%);
     transition: all .5s ease;
+}
+.card__info p {
+    display: inline-block;
 }
 .card:hover .card__info {
     transform: translateY(0);
 }
-
 
 button {
     position: absolute;
@@ -72,7 +78,7 @@ button {
     z-index: 3;
     border: none;
     cursor: pointer;
-    transform: translateY(-150%);
+    transform: translateY(-300%);
     transition: all .5s ease;
 }
 .card:hover button {
@@ -121,7 +127,7 @@ button {
     position: absolute;
     z-index: 3;
     bottom: 5%;
-    right: 25%;
+    right: 15%;
     padding: .3em;
     background-color: #EFEFEF;
     border-radius: 100%;
