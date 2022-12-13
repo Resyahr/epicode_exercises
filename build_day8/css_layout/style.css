@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.header,
+.navigation,
+.article,
+.aside,
+.footer {
+    padding: 1em;
+    font-size: 1em;
+}
+
+.header {
+    background-color: #91C9C4;
+}
+
+.content_container {
+    display: flex;
+}
+
+.navigation {
+    background-color: #F3AF3D;
+    height: 300px;
+    width: 10%;
+}
+
+.article {
+    background-color: #F8D767;
+    height: 300px;
+    width: 60%;
+}
+
+.aside {
+    background-color: #FDF288;
+    height: 300px;
+    width: 30%;
+}
+
+.footer {
+    background-color: #52A49A;
+}
