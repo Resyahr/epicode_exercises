@@ -10,6 +10,10 @@
     --clr-letters: #DE769E;
 }
 
+body {
+    background-color: lightblue;
+}
+
 .container {
     margin: 0 2em;
 }
