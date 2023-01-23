@@ -31,5 +31,30 @@ const amy = {
   isAmbassador: false,
 };
 
-const prices = [34, 5, 2];
+const prices = [34, 5, 2, 2];
 const shippingCost = 50;
+
+function cartLogic (user, prices, shippingCost) {
+  let cartTotal = 0;
+
+  for (let i = 0; i < prices.length; i++) {
+    cartTotal += prices[i]
+  }
+  
+  if (user.isAmbassador) {
+    cartTotal = cartTotal - (30 * cartTotal / 100);
+  }
+
+  if (cartTotal > 100) {
+    shippingCost = 0
+  }
+
+  cartTotal += shippingCost
+  
+  return cartTotal
+}
+
+//Execute Function with different users
+console.log(cartLogic(amy, prices, shippingCost))
+console.log(cartLogic(paul, prices, shippingCost))
+console.log(cartLogic(marco, prices, shippingCost))
