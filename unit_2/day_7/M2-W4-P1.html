@@ -1,0 +1,244 @@
+<!-- saved from url=(0065)https://join.epicode.com/wp-content/uploads/2022/05/M2-W4-P1.html -->
+<html>
+<script type="text/javascript">window["_gaUserPrefs"] = { ioo: function () { return true; } }</script>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style>
+    .myHeading {
+      color: red;
+    }
+
+    .myHeading {
+      user-select: none;
+    }
+
+    div:nth-child(3) h2 {
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>This is the title of the page</h1>
+    <h2>This is the subtitle of the page</h2>
+  </div>
+
+  <div>
+    <hr>
+
+    <ul id="firstList">
+      <li>1st</li>
+      <li>2nd</li>
+      <li>3rd</li>
+    </ul>
+
+    <ul id="secondList">
+      <li>1st</li>
+      <li>2nd</li>
+      <li>3rd</li>
+    </ul>
+
+    <a href="https://join.epicode.com/wp-content/uploads/2022/05/strive.school">This link goes to Strive School</a>
+
+    <div>
+      <p>This text is just for the exercise</p>
+    </div>
+
+    <div data-dashlane-rid="c6ad266c2a62dc9e" data-form-type="other">
+      <input type="text" id="input-field" placeholder="input field for the exercise"
+        data-dashlane-rid="c8c512f1e481547f" data-form-type="other">
+    </div>
+  </div>
+
+  <div>
+    <p>And this text is just for the exercise too!</p>
+    <h2 style="color: red">
+      Save this page on your computer and open it with VSCode to get the
+      questions!
+    </h2>
+  </div>
+  <script>
+
+    //HTML ELEMENTS
+    const title = document.getElementsByTagName('h1')[0];
+    const paragraphChildOfDiv = document.querySelectorAll('div > p');
+    const links = document.getElementsByTagName('a');
+    const secondUl = document.querySelectorAll('div ul:nth-child(3)');
+    const divs = document.querySelector('div:nth-child(2)');
+    const firstList = document.getElementById('firstList');
+    const unorderedLists = document.querySelectorAll('ul');
+    const footer = document.querySelector('div:nth-child(3) h2');
+    const input = document.getElementById('input-field');
+title.for
+    /* EXERCISE 1
+     Write a function for changing the title of the document in something else.
+    */
+
+    const changeTitle = function (newTitle) {
+      title.innerText = newTitle;
+    };
+
+    changeTitle('My new title');
+
+    /* EXERCISE 2
+     Write a function for changing the class of the title of the page in "myHeading".
+    */
+
+    const addClassToTitle = function () {
+      title.classList.add('myHeading');
+    };
+
+    addClassToTitle();
+
+    /* EXERCISE 3
+     Write a function for changing the text of only the p which are children of a div.
+    */
+
+    
+
+    const changePcontent = function () {
+      paragraphChildOfDiv.forEach(function(paragraph) {
+        paragraph.innerText = 'Paragraphs inside a div changed';
+      }) 
+    };
+
+    changePcontent();
+    /* EXERCISE 4
+     Write a function for changing the href property of every link to https://www.google.com
+    */
+
+    const changeUrls = function () {
+      for(let i = 0; i < links.length; i++) {
+        let eachLink = links[i]
+        eachLink.setAttribute('href' ,'https://www.google.com');
+      }
+    };
+
+    changeUrls();
+
+    /* EXERCISE 5
+     Write a function for adding a new list item in the second unordered list.
+    */
+
+  
+    const addToTheSecond = function (content) {
+      for (let i = 0; i < secondUl.length; i++) {
+        let ul = secondUl[i]
+        let newListItem = ul.innerHTML += `<li> ${content} </li>`;
+      }
+    };
+
+    addToTheSecond('Some new list item');
+
+    /* EXERCISE 6
+     Write a function for adding a second paragraph to the first div.
+    */
+
+    const addParagraph = function (content) {
+      divs.insertAdjacentHTML('beforeend', `<p> ${content} </p>`);
+      /* When using "divs.innerHtml += `<p> ${content} </p>`", it causes the next pieces of code to not work correctly...
+       Hence I use ".insertAdjacentHTML() method to append a new the divs" */
+    };
+
+    addParagraph("THIS PARAGRAPH WAS ADDED TO THE SECOND DIV VIA JAVASCRIPT");
+
+    /* EXERCISE 7
+     Write a function for making the first unordered list disappear.
+    */
+
+    const firstUlDisappear = function () {
+      if(firstList) {
+        firstList.remove();
+      } else {
+        console.log('Element not found')
+      }
+    };
+    
+    firstUlDisappear()
+    
+    /* EXERCISE 8
+     Write a function for making the background of every unordered list green.
+    */
+
+    const paintItGreen = function () {
+      for(let i = 0; i < unorderedLists.length; i++) {
+        unorderedLists[i].style.backgroundColor = 'green'
+      }
+    };
+
+    paintItGreen()
+
+    /* EXERCISE 9
+     Make the heading of the page change color every time the user clicks on it.
+    */
+
+    const makeItClickable = function () {
+
+      function randomColor () {
+        let letters = '0123456789ABCDEF'
+        let color = '#'
+        for(let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)]
+        }
+        return color
+      }
+
+      title.onclick = () => {
+        title.style.color = randomColor()
+      }
+
+    };
+
+    makeItClickable()
+
+    /* EXERCISE 10
+     Change the footer text with something else when the user clicks on it.
+    */
+
+    const changeFooterText = function () {
+      const address = ['Leipziger Strasse', 'Berliner Strasse', 'Neue Strasse', 'Calle Mar', 'Calle Valenciana', 'Sofia street', 'Calle Simon Bolivar']
+      const houseNumber = ['2a', '78b', '160', '7', '28', '5e', '37', '20a', '9']
+      const postalCode = ['04420', '04357', '32568', '1010', '78952', '100253']
+      const state = ['Leipzig', 'Berlin', 'Frankfurt', 'Barcelona', 'Madrid', 'Valencia', 'Sofia', 'Prague', 'Caracas']
+      const country = ['Germany', 'Spain', 'Bulgaria', 'Czech Republic', 'Venezuela']
+
+      for (let i = 0; i < 5; i++) {
+        let fakeAddress = address[Math.floor(Math.random() * address.length)] 
+        let fakeHouseNumber = houseNumber[Math.floor(Math.random() * houseNumber.length)] 
+        let fakePostalCode = postalCode[Math.floor(Math.random() * postalCode.length)] 
+        let fakeState = state[Math.floor(Math.random() * state.length)] 
+        let fakeCountry = country[Math.floor(Math.random() * country.length)]
+
+        footer.innerText = fakeAddress + ', ' + fakeHouseNumber + ', ' + fakePostalCode + ', ' + fakeState + ', ' + fakeCountry
+      }      
+    };
+
+    footer.addEventListener('click', changeFooterText)
+
+    /* EXERCISE 11
+     Attach an event listener to the input field in the page for console logging its value just after any keystroke.
+    */
+
+    input.addEventListener('input', (event) => {
+      console.log(event.target.value)
+    })
+
+    /* EXERCISE 12
+     Create a welcome alert message when the page successfully loads.
+    */
+
+    window.onload = function () {
+      alert('Welcome, this website has loaded succesfully')
+    };
+
+    /* EXERCISE 13
+     Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
+    */
+  </script>
+
+
+</body>
+
+</html>
