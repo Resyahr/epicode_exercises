@@ -283,7 +283,6 @@ createTable()
 
 /* 50) Write a function to remove the last table from the page 👌 */
 const removeTableBtn = document.getElementsByClassName('remove-table-btn')[0]
-
 removeTableBtn.addEventListener('click', () => {
 
     tableElement.remove()
