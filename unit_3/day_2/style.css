@@ -6,6 +6,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc(15px + 0.390625vw);
 }
 
 a {
