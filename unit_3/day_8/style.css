@@ -1,0 +1,33 @@
+body {
+    background-color: #141414;
+}
+
+.menu-toggler:focus, .menu-toggler:active {
+    border: none !important;
+}
+
+.bell-icon {
+    position: relative;
+    font-size: 1.4rem;
+}
+
+.bell-icon::after {
+    content: "4";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    top: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    font-size: .7rem;
+    cursor: pointer;
+}
+
+.carousel-btn {
+    width: 2%;
+}

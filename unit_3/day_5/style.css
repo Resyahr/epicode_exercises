@@ -1,0 +1,96 @@
+/* i {
+  color: #754ffe;
+} */
+
+.nav-bell {
+  height: 40px;
+  width: 40px;
+  background-color: #f5f4f8;
+  position: relative;
+}
+
+.nav-bell::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #7550fe;
+  border: 2px solid white;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+
+.nav-user {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.nav-user::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #1acb98;
+  border: 2px solid white;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+}
+
+.user-profile {
+  width: 250px;
+}
+
+.hero-main {
+  background-color: #7550fe;
+  /* height: 40vh; */
+}
+
+.hero-sub-title {
+  color: #bba7ff;
+}
+
+.curses-btn {
+  background-color: #1acb98;
+}
+
+.instructor-btn {
+  border: 1px solid #b29dfe;
+  background-color: #ffffff;
+}
+
+.features-section {
+  background-color: #ffffff;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ffeeda;
+  border-radius: 100%;
+}
+
+.feature-icon i {
+  color: #c28135;
+}
+
+.main {
+  background-color: #f5f4f8;
+}
+
+.carousel-btn {
+  background-color: #ffffff;
+  border-radius: 100%;
+  color: #7550fe;
+  width: 30px;
+  height: 30px;
+}
+
+.cards-title {
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50px; */
+}

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg justify-content-between top-0 pt-0 pb-0">
+        <div class="container-fluid w-100 mb-2">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.svg" alt="Logo">
+            </a>
+
+            <div class="col-auto order-lg-3">
+                <div class="d-flex pt-2">
+                    <div class="rounded-circle nav-bell d-flex justify-content-center align-items-center me-1">
+                        <i class="bi bi-bell"></i>
+                    </div>
+
+                    <div class="nav-user me-2 me-3">
+                        <span data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="w-100 rounded-circle" src="./assets/avatar-1.jpg" alt="user photo">
+                        </span>
+                        <div class="dropdown-menu dropdown-menu-end user-profile">
+                            <li>
+                                <div class="container">
+                                    <div class="row pt-2 justify-content-between align-content-center">
+                                        <div class="col-3 nav-user p-0 ms-3 align-self-center">
+                                            <img class="w-100 rounded-circle" src="./assets/avatar-1.jpg"
+                                                alt="user photo">
+                                        </div>
+                                        <div class="col-auto me-2">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="">Username</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="text-muted"> username@email.com </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <hr class="dropdown-divider">
+
+                            <li>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="dropdown-item"> <i class="bi bi-person me-2"></i>
+                                            Profile </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="dropdown-item"> <i class="bi bi-star me-2"></i>
+                                            Suscription </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="dropdown-item"> <i class="bi bi-gear me-2"></i>
+                                            Settings </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <div class="row">
+                                <div class="col">
+                                    <li>
+                                        <a class="dropdown-item" href="#"> <i class="bi bi-gear me-2"> </i>
+                                            Sign Out </a>
+                                    </li>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col me-2 p-0">
+                            <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- START NAV LINKS -->
+            <div class="col-auto justify-content-end collapse navbar-collapse px-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Browse
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Landings
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- END NAV LINKS -->
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START HERO -->
+    <section class="container-fluid hero-main">
+        <div class="container pt-3">
+            <div class="row align-items-lg-center g-0">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="row justify-content-center">
+                        <h1 class="text-light display-4">Welcome Web Students!</h1>
+                    </div>
+                    <div class="row">
+                        <p class="hero-sub-title lead"><strong> Hand-picked instructor and expertly crafted courses,
+                                designed for the modern students and entrepreneur. </strong></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-auto mx-0 my-1 pe-1">
+                            <button type="button" class="btn curses-btn text-light">Browse Courses</button>
+                        </div>
+                        <div class="col-auto mx-0 my-1 px-0">
+                            <button type="button" class="btn instructor-btn"> Are you instructor? </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-7 mt-4 mt-lg-0">
+                    <img class="w-100" src="./assets/hero-img.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END HERO -->
+
+    <!-- START FEATURES -->
+    <section class="container mt-3 mb-3 px-md-0 features-section">
+        <div class="row justify-content-around mx-3">
+            <div class="col-12 col-md-4">
+                <div class="row align-items-center">
+                    <div class="d-flex align-items-center justify-content-center col-auto feature-icon"><i class="bi bi-camera-video"></i></div>
+                    <div class="col">
+                        <h6 class="mb-0">30,000 online courses</h6>
+                        <span>Enjoy a variety of free topics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-3 mt-md-0">
+                <div class="row align-items-center">
+                    <div class="d-flex align-items-center justify-content-center col-auto feature-icon"><i class="bi bi-people"></i></div>
+                    <div class="col">
+                        <h6 class="mb-0 text-dark">30,000 online courses</h6>
+                        <span>Enjoy a variety of free topics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-3 mt-md-0">
+                <div class="row align-items-center">
+                    <div class="d-flex align-items-center justify-content-center col-auto feature-icon"><i class="bi bi-clock"></i></i></div>
+                    <div class="col">
+                        <h6 class="mb-0">30,000 online courses</h6>
+                        <span>Enjoy a variety of free topics</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- END FEATURES -->
+
+    <!-- START MAIN -->
+    <section class="container-fluid main">
+        <div class="container">
+            <div class="row pt-4">
+                <h4> Recommended for you </h4>
+            </div>
+
+            <!-- START CAROUSEL -->
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="card col-6">
+                                    <img src="./assets/course-graphql.jpg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
+                                        <div class="d-flex">
+                                            <span class="text-muted">
+                                                <i class="bi bi-clock"></i>
+                                                2h 40m
+                                            </span>
+                                            <span class="text-muted">
+                                                <i class="bi bi-reception-4"></i>
+                                                Advanced
+                                            </span>
+                                        </div>
+                                        <div class="card-footer container-fluid bg-transparent border-success">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-6">
+                                
+                            </div>
+                            <div class="col-6">
+                                <img src="./assets/course-javascript.jpg" class="d-block w-100" alt="...">
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- END CAROUSEL -->
+
+        </div>
+
+
+
+    </section>
+
+    <!-- END MAIN -->
+
+</body>
+
+</html>
